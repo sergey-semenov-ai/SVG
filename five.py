@@ -16,14 +16,14 @@ import pytesseract as rec
 
 # Загрузи НС
 
-net = models.load_model('Trucks_CB.h5')
+net = models.load_model('//home/sergey/AFE/SVG/Trucks_CB.h5')
 
 ans = ['Фон','Грузовик']
 
 #video = cv2.VideoCapture(0)
 #video = cv2.VideoCapture('rtsp://admin:admin@192.168.10.20:554/1/1')
-video = cv2.VideoCapture('video/2268-video.mp4')  #759
-video_d = cv2.VideoCapture('video/2269-video.mp4')
+video = cv2.VideoCapture('//home/sergey/AFE/SVG/video/2268-video.mp4')  #759
+video_d = cv2.VideoCapture('//home/sergey/AFE/SVG/video/2269-video.mp4')
 video.set(cv2.CAP_PROP_POS_MSEC, 4*60*1000+46*1000)
 
 
